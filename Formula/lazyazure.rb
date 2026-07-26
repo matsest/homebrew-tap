@@ -5,41 +5,41 @@
 class Lazyazure < Formula
   desc "The lazy way to view your Azure resources. TUI for drilling down into Azure subscriptions, resource groups and resources."
   homepage "https://github.com/matsest/lazyazure"
-  version "0.4.4"
+  version "0.4.5"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/matsest/lazyazure/releases/download/v0.4.4/lazyazure_0.4.4_darwin_amd64"
-      sha256 "e17905cdb67008228974de38558e15178e7c709ff22a413296bbbbe848abc1b9"
+      url "https://github.com/matsest/lazyazure/releases/download/v0.4.5/lazyazure_0.4.5_darwin_amd64"
+      sha256 "5583657ea60dfb4e3c9cc4c7528e3eacf928f64f4e7cc0df9ca0a9e0184494ef"
 
       define_method(:install) do
-        bin.install "lazyazure_0.4.4_darwin_amd64" => "lazyazure"
+        bin.install "lazyazure_0.4.5_darwin_amd64" => "lazyazure"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/matsest/lazyazure/releases/download/v0.4.4/lazyazure_0.4.4_darwin_arm64"
-      sha256 "4331cb53fffcb619cc7fc4cc735520f338d7e42ac22b5bad7b73da8334b89ac4"
+      url "https://github.com/matsest/lazyazure/releases/download/v0.4.5/lazyazure_0.4.5_darwin_arm64"
+      sha256 "aff1b20f08e9277230d6c1cdfc682feffbd5691b44206cdc84e191d22fe95228"
 
       define_method(:install) do
-        bin.install "lazyazure_0.4.4_darwin_arm64" => "lazyazure"
+        bin.install "lazyazure_0.4.5_darwin_arm64" => "lazyazure"
       end
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/matsest/lazyazure/releases/download/v0.4.4/lazyazure_0.4.4_linux_amd64"
-      sha256 "763513c18fd3a2d4f660936eaac3b4ecae92fdd70ae593ed79d47e60ab931c84"
+      url "https://github.com/matsest/lazyazure/releases/download/v0.4.5/lazyazure_0.4.5_linux_amd64"
+      sha256 "9249a95e1f13d6f810bc33633141baa48ab256961c5f62344527caf6f9f52fcd"
       define_method(:install) do
-        bin.install "lazyazure_0.4.4_linux_amd64" => "lazyazure"
+        bin.install "lazyazure_0.4.5_linux_amd64" => "lazyazure"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/matsest/lazyazure/releases/download/v0.4.4/lazyazure_0.4.4_linux_arm64"
-      sha256 "ba41ad0208e0a7206eaa3ad1c2670735e2af4e67fb63d3f7e3826e0bb35a45c5"
+      url "https://github.com/matsest/lazyazure/releases/download/v0.4.5/lazyazure_0.4.5_linux_arm64"
+      sha256 "ec16ab8550b9d8a8902fe1c5ccefe7e3329cc62ec973e69b9252a1577689dd17"
       define_method(:install) do
-        bin.install "lazyazure_0.4.4_linux_arm64" => "lazyazure"
+        bin.install "lazyazure_0.4.5_linux_arm64" => "lazyazure"
       end
     end
   end
